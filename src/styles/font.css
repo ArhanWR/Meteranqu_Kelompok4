@@ -1,6 +1,20 @@
 @font-face {
   font-display: swap;
   font-style: normal;
+  src: url("/fonts/InterRegular.ttf");
+  font-family: "Inter";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/InterBold.ttf");
+  font-family: "Inter";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
   src: url("/fonts/PlusJakartaSansRomanRegular.ttf");
   font-family: "Plus Jakarta Sans";
   font-weight: 400;
@@ -8,7 +22,42 @@
 @font-face {
   font-display: swap;
   font-style: normal;
-  src: url("/fonts/PoppinsRegular.ttf");
-  font-family: "Poppins";
+  src: url("/fonts/ManropeSemiBold.ttf");
+  font-family: "Manrope";
+  font-weight: 600;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/ManropeRegular.ttf");
+  font-family: "Manrope";
   font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/PlusJakartaSansRomanBold.ttf");
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/PlusJakartaSansRomanSemiBold.ttf");
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/ManropeMedium.ttf");
+  font-family: "Manrope";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/ManropeLight.ttf");
+  font-family: "Manrope";
+  font-weight: 300;
 }

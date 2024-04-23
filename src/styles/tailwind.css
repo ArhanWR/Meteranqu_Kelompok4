@@ -44,3 +44,11 @@ select:focus {
   --tw-ring-color: transparent;
   border-color: transparent;
 }
+@layer components {
+  /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+  .container-xs {
+    @apply w-full mx-auto max-w-[1378px];
+  }
+}

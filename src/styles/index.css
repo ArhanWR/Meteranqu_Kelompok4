@@ -1,13 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Poppins;
+  font-family: Inter;
 }
 * {
   box-sizing: border-box;
   line-height: normal;
   font-family: inherit;
   margin: unset;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+ul {
+  margin: 0;
+  margin-inline: unset !important;
+  padding: 0;
+  list-style: none;
 }
 input {
   background-color: transparent;
@@ -16,7 +26,9 @@ input {
 input:focus {
   outline: none;
 }
-
+table {
+  table-layout: fixed;
+}
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;

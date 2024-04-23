@@ -13,10 +13,29 @@ const Home = () => {
       </p>
       <ul style={{ listStyle: "none", padding: "0" }}>
         <li style={{ marginBottom: "10px" }}>
-          <Link href="/tagihanair" style={{ color: "#87CEFA", textDecoration: "none" }}>
-            TagihanAir
+          <Link href="/homepage" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            HomePage
           </Link>
-          
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link href="/pemakaianair" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            PemakaianAir
+          </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link href="/batterystatus" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            BatteryStatus
+          </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link href="/status" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            Status
+          </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link href="/dashboard" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            Dashboard
+          </Link>
         </li>
       </ul>
     </div>
