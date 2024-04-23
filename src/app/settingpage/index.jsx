@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import { Text, Img, Heading, Button } from "../../components";
 import Sidebar1 from "../../components/Sidebar1";
@@ -16,7 +17,7 @@ export default function SettingPagePage() {
             <Sidebar1 className="!sticky top-0 flex h-screen w-[347px] flex-col overflow-auto rounded-[20px] bg-blue-200 p-[17px] md:hidden" />
 
             {/* profile section */}
-            <div className="flex w-[70%] flex-col items-end gap-12 md:w-full">
+            <div className="flex w-[70%] flex-col items-end md:w-full">
               {/* notification bar section */}
               <div className="flex items-center gap-[18px]">
                 <Img
@@ -48,7 +49,7 @@ export default function SettingPagePage() {
               </div>
 
               {/* profile details section */}
-              <div className="mr-[9px] flex flex-col items-center self-stretch md:mr-0">
+              <div className=" flex flex-col items-center self-stretch md:mr-0">
                 {/* profile overview section */}
                 <div className="relative z-[1] flex w-[30%] flex-col items-start justify-center rounded-[30px] bg-indigo-300 p-[21px] shadow-md md:w-full sm:p-5">
                   <Heading size="xs" as="h1" className="ml-[71px] md:ml-0">
@@ -110,7 +111,7 @@ export default function SettingPagePage() {
                       Dark Mode
                     </Text>
                     <Text as="p" className="ml-[17px] mt-7 md:ml-0">
-                      Battery Status
+                      <Link href="/batterystatus">Battery Status</Link>
                     </Text>
                     <Text as="p" className="ml-[17px] mt-[18px] md:ml-0">
                       Status

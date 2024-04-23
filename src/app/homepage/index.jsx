@@ -5,10 +5,10 @@ import MegaMenu1 from "../../components/MegaMenu1";
 import Link from "next/link";
 
 const data = [
-  { image: "img_ion_water_sharp.svg", text: "Penggunaan Air" },
-  { image: "img_material_symbols_mode_off_on.svg", text: "Status" },
-  { image: "img_tabler_battery_4_filled.svg", text: "Battery" },
-  { image: "img_solar_bill_list_bold.svg", text: "Tagihan Air" },
+  { image: "img_ion_water_sharp.svg", text: "Penggunaan Air", link: "/penggunaanair" },
+  { image: "img_material_symbols_mode_off_on.svg", text: "Status", link: "/status" },
+  { image: "img_tabler_battery_4_filled.svg", text: "Battery", link: "/batterystatus" },
+  { image: "img_solar_bill_list_bold.svg", text: "Tagihan Air", link: "/tagihannair" },
 ];
 
 export default function HomePagePage() {
@@ -153,7 +153,7 @@ export default function HomePagePage() {
                     {d.text}
                   </Text>
                   <Button className="ml-[35px] flex h-[38px] min-w-[110px] items-center justify-center self-start rounded-[19px] bg-indigo-300 px-8 text-center text-sm font-bold text-white-A700 shadow-sm md:ml-0 sm:px-5">
-                    Check
+                    <Link href={d.link}>Check</Link>
                   </Button>
                 </div>
               ))}
