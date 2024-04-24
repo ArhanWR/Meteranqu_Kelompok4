@@ -43,17 +43,17 @@ export default function Sidebar1({ ...props }) {
         <MenuItem
           icon={<Img src="img_ic_round_dashboard.svg" width={50} height={50} alt="icround_one" className="h-[50px] w-[50px]"/>}
         >
-          DASHBOARD
+          <Link href="/dashboard">DASHBOARD</Link>
         </MenuItem>
         <MenuItem
           icon={<Img src="img_material_symbols_water_drop.svg" width={50} height={50} alt="material_one" className="h-[50px] w-[50px]"/>}
         >
-          WATER USAGE
+          <Link href="/pemakaianair">WATER USAGE</Link>
         </MenuItem>
         <MenuItem
           icon={<Img src="img_trophy.svg" width={50} height={50} alt="trophy_one" className="h-[50px] w-[50px]" />}
         >
-          WATER BILLS
+          <Link href="/tagihanair">WATER BILLS</Link>
         </MenuItem>
         <MenuItem
           icon={<Img src="img_search.svg" width={50} height={50} alt="search_one" className="h-[50px] w-[50px]" />}

@@ -1,5 +1,6 @@
 'use client';
 import React from "react";
+import Link from "next/link";
 import { Img, Text, Heading, Button } from "../../components";
 import { MenuItem, Menu, Sidebar } from "react-pro-sidebar";
 
@@ -10,7 +11,7 @@ export default function StatusPage() {
     <>
       <div className="w-full">
         {/* Sidebar section */}
-        <div className="flex items-start justify-between gap-5 rounded-[40px] bg-white-A700 pb-[31px] pr-[31px] md:flex-col sm:pb-5 sm:pr-5">
+        <div className="flex items-start justify-between gap-5 rounded-[40px] bg-white-A700 md:flex-col sm:pb-5 sm:pr-5">
           <Sidebar
             width="378px !important"
             collapsedWidth="80px !important"
@@ -19,7 +20,7 @@ export default function StatusPage() {
           >
             {/* Sidebar content */}
             <Img src="img_search_white_a700.svg" width={15} height={15} alt="search_one" className="h-[15px] w-[15px] self-start" />
-            <Img src="img_meteranqu_removebg_preview.png" width={274} height={56} alt="meteranqu_one" className="mr-[18px] mt-[37px] h-[56px] w-[80%] object-cover md:mr-0" />
+            <Img src="img_meteranqu_removebg_preview.png" width={274} height={56} alt="meteranqu_one" className="mr-[18px] mt-[17px] h-[56px] w-[80%] object-cover md:mr-0" />
             <Menu
               menuItemStyles={{
                 button: {
@@ -29,7 +30,7 @@ export default function StatusPage() {
                   fontWeight: 400,
                   fontSize: "25px",
                   borderRadius: "10px",
-                  paddingLeft: "35px",
+                  paddingLeft: "55px",
                   paddingRight: "35px",
                   "&:hover, &.ps-active": {
                     backgroundColor: "#6a95d5 !important",
@@ -37,17 +38,17 @@ export default function StatusPage() {
                   },
                 },
               }}
-              rootStyles={{ "&>ul": { gap: "0.50px" } }}
-              className="mt-[161px] flex w-full flex-col pb-16 md:pb-5"
+              rootStyles={{ "&>ul": { gap: "5.50px" } }}
+              className="mt-[111px] flex w-full flex-col pb-16 md:pb-5"
             >
-              <MenuItem icon={<Img src="img_ic_round_dashboard.svg" width={50} height={50} alt="icround_one" className="h-[50px] w-[50px]" />}>DASHBOARD</MenuItem>
-              <MenuItem icon={<Img src="img_material_symbols_water_drop.svg" width={50} height={50} alt="material_one" className="h-[50px] w-[50px]" />}>WATER USAGE</MenuItem>
-              <MenuItem icon={<Img src="img_trophy.svg" width={50} height={50} alt="trophy_one" className="h-[50px] w-[50px]" />}>WATER BILLS</MenuItem>
-              <MenuItem icon={<Img src="img_search.svg" width={50} height={50} alt="search_three" className="h-[50px] w-[50px]" />}>SETTING</MenuItem>
+              <MenuItem icon={<Img src="img_ic_round_dashboard.svg" width={50} height={50} alt="icround_one" className="h-[50px] w-[50px]" />}><Link href="/dashboard">DASHBOARD</Link></MenuItem>
+              <MenuItem icon={<Img src="img_material_symbols_water_drop.svg" width={50} height={50} alt="material_one" className="h-[50px] w-[50px]" />}><Link href="/pemakaianair">WATER USAGE</Link></MenuItem>
+              <MenuItem icon={<Img src="img_trophy.svg" width={50} height={50} alt="trophy_one" className="h-[50px] w-[50px]" />}><Link href="/tagihanair">WATER BILLS</Link></MenuItem>
+              <MenuItem icon={<Img src="img_search.svg" width={50} height={50} alt="search_three" className="h-[50px] w-[50px]" />}><Link href="/settingpage">SETTING</Link></MenuItem>
             </Menu>
             {!collapsed && (
               /* Logout section */
-              <div className="mt-[282px] flex w-[87%] items-center justify-center gap-1.5 rounded-[10px] bg-indigo-300 p-3 shadow-xs md:w-full">
+              <div className="mt-[92px] flex w-[87%] items-center justify-center gap-1.5 rounded-[10px] bg-indigo-300 p-3 shadow-xs md:w-full">
                 <Img src="img_tabler_logout.svg" width={50} height={50} alt="tablerlogout" className="h-[50px] w-[50px]" />
                 <Text size="s" as="p" className="mb-[5px] self-end">
                   Logout

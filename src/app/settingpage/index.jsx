@@ -114,7 +114,7 @@ export default function SettingPagePage() {
                       <Link href="/batterystatus">Battery Status</Link>
                     </Text>
                     <Text as="p" className="ml-[17px] mt-[18px] md:ml-0">
-                      Status
+                      <Link href="/status">Status</Link>
                     </Text>
                   </div>
                 </div>
