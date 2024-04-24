@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Button, Text, Img, Heading } from "../../components";
-import MegaMenu1 from "../../components/MegaMenu1";
+import { Button, Text, Img, Heading } from "./../components";
+import MegaMenu1 from "./../components/MegaMenu1";
 import Link from "next/link";
 
 const data = [
