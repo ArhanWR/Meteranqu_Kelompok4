@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { Button, Img } from "../../components";
 import { MenuItem, Menu, Sidebar } from "react-pro-sidebar";
 
@@ -48,8 +49,8 @@ export default function PemakaianAirPage() {
                   },
                 },
               }}
-              rootStyles={{ ["&>ul"]: { gap: "61px" } }}
-              className="mt-[154px] flex w-full flex-col self-stretch pb-[17px]"
+              rootStyles={{ ["&>ul"]: { gap: "21px" } }}
+              className="mt-[114px] flex w-full flex-col self-stretch pb-[17px]"
             >
               <MenuItem
                 icon={
@@ -62,7 +63,7 @@ export default function PemakaianAirPage() {
                   />
                 }
               >
-                DASHBOARD
+                <Link href="/dashboard">DASHBOARD</Link>
               </MenuItem>
               <MenuItem
                 icon={
@@ -75,21 +76,21 @@ export default function PemakaianAirPage() {
                   />
                 }
               >
-                WATER USAGE
+                <Link href="/pemakaianair">WATER USAGE</Link>
               </MenuItem>
               <MenuItem
                 icon={
                   <Img src="img_trophy.svg" width={50} height={50} alt="trophy_one" className="h-[50px] w-[50px]" />
                 }
               >
-                WATER BILLS
+                <Link href="/tagihanair">WATER BILLS</Link>
               </MenuItem>
               <MenuItem
                 icon={
                   <Img src="img_search.svg" width={50} height={50} alt="search_one" className="h-[50px] w-[50px]" />
                 }
               >
-                SETTING
+                <Link href="/settingpage">SETTING</Link>
               </MenuItem>
             </Menu>
             {!collapsed ? (
@@ -101,10 +102,10 @@ export default function PemakaianAirPage() {
                     width={50}
                     height={50}
                     alt="tabler:logout"
-                    className="h-[50px] w-[50px]"
+                    className="h-[20px] w-[50px]"
                   />
                 }
-                className="mt-[295px] w-full sm:px-5"
+                className="mt-[125px] w-full sm:px-5"
               >
                 Logout
               </Button>

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { Text, Img, GoogleMap, Button, CheckBox } from "../../components";
 import { MenuItem, Menu, Sidebar } from "react-pro-sidebar";
 
@@ -79,7 +80,7 @@ export default function DashboardPage() {
           <Menu
             menuItemStyles={{
               button: {
-                padding: "20px",
+                padding: "10px",
                 gap: "13px",
                 color: "#ffffff",
                 fontWeight: 400,
@@ -92,7 +93,7 @@ export default function DashboardPage() {
               },
             }}
             rootStyles={{ ["&>ul"]: { gap: "0.50px" } }}
-            className="mt-[140px] flex w-full flex-col self-stretch"
+            className="mt-[70px] flex w-full flex-col self-stretch"
           >
             <MenuItem
               icon={
@@ -105,7 +106,7 @@ export default function DashboardPage() {
                 />
               }
             >
-              DASHBOARD
+              <Link href="/dashboard">DASHBOARD</Link>
             </MenuItem>
             <MenuItem
               icon={
@@ -118,21 +119,21 @@ export default function DashboardPage() {
                 />
               }
             >
-              WATER USAGE
+              <Link href="/pemakaianair">WATER USAGE</Link>
             </MenuItem>
             <MenuItem
               icon={<Img src="img_trophy.svg" width={50} height={50} alt="trophy_one" className="h-[50px] w-[50px]" />}
             >
-              WATER BILLS
+              <Link href="/tagihanair">WATER BILLS</Link>
             </MenuItem>
             <MenuItem
               icon={<Img src="img_search.svg" width={50} height={50} alt="search_one" className="h-[50px] w-[50px]" />}
             >
-              SETTING
+              <Link href="/settingpage">SETTING</Link>
             </MenuItem>
           </Menu>
           {!collapsed ? (
-            <div className="mt-[295px] flex items-center justify-center gap-[13px] self-stretch rounded-[10px] bg-indigo-300 p-3 shadow-xs">
+            <div className="mt-[125px] flex items-center justify-center gap-[13px] self-stretch rounded-[10px] bg-indigo-300 p-3 shadow-xs">
               <Img src="img_search.svg" width={50} height={50} alt="search_three" className="h-[50px] w-[50px]" />
               <Text size="s" as="p" className="mb-[5px] self-end">
                 Logout

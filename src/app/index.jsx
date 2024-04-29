@@ -5,10 +5,10 @@ import MegaMenu1 from "./../components/MegaMenu1";
 import Link from "next/link";
 
 const data = [
-  { image: "img_ion_water_sharp.svg", text: "Penggunaan Air", link: "/penggunaanair" },
+  { image: "img_ion_water_sharp.svg", text: "Penggunaan Air", link: "/pemakaianair" },
   { image: "img_material_symbols_mode_off_on.svg", text: "Status", link: "/status" },
   { image: "img_tabler_battery_4_filled.svg", text: "Battery", link: "/batterystatus" },
-  { image: "img_solar_bill_list_bold.svg", text: "Tagihan Air", link: "/tagihannair" },
+  { image: "img_solar_bill_list_bold.svg", text: "Tagihan Air", link: "/tagihanair" },
 ];
 
 export default function HomePagePage() {
