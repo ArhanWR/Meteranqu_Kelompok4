@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { Text, Button, Input, Img } from "../components";
+import Link from "next/link";
+import { Text, Button, Input, Img } from "../../components";
 import { MenuItem, Menu, Sidebar } from "react-pro-sidebar";
 
 export default function TagihanAirPage() {
@@ -48,8 +49,8 @@ export default function TagihanAirPage() {
                   },
                 },
               }}
-              rootStyles={{ ["&>ul"]: { gap: "52px" } }}
-              className="mt-[161px] flex w-full flex-col self-stretch pb-2"
+              rootStyles={{ ["&>ul"]: { gap: "22px" } }}
+              className="mt-[91px] flex w-full flex-col self-stretch pb-2"
             >
               <MenuItem
                 icon={
@@ -62,7 +63,7 @@ export default function TagihanAirPage() {
                   />
                 }
               >
-                DASHBOARD
+                <Link href="/dashboard">DASHBOARD</Link>
               </MenuItem>
               <MenuItem
                 icon={
@@ -75,21 +76,21 @@ export default function TagihanAirPage() {
                   />
                 }
               >
-                WATER USAGE
+                <Link href="/pemakaianair">WATER USAGE</Link>
               </MenuItem>
               <MenuItem
                 icon={
                   <Img src="img_trophy.svg" width={50} height={50} alt="trophy_one" className="h-[50px] w-[50px]" />
                 }
               >
-                WATER BILLS
+                <Link href="/tagihanair">WATER BILLS</Link>
               </MenuItem>
               <MenuItem
                 icon={
                   <Img src="img_search.svg" width={50} height={50} alt="search_one" className="h-[50px] w-[50px]" />
                 }
               >
-                SETTING
+                <Link href="/settingpage">SETTING</Link>
               </MenuItem>
             </Menu>
             {!collapsed ? (
@@ -104,7 +105,7 @@ export default function TagihanAirPage() {
                     className="h-[50px] w-[50px]"
                   />
                 }
-                className="mt-[295px] w-full gap-1.5 font-plusjakartasans shadow-xs sm:px-5"
+                className="mt-[115px] w-full gap-1.5 font-plusjakartasans shadow-xs sm:px-5"
               >
                 Logout
               </Button>
